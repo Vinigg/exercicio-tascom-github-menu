@@ -65,7 +65,7 @@ function apagarUsuario(db){
         if (db[i].nome === nomeProcurado) {
             novoDb = db.filter(user => user.nome != nomeProcurado)
             console.log(novoDb)
-            db = novoDb
+            usuarios = novoDb
             return alert(`Usuário ${nomeProcurado} deletado.`)
         }        
     }
